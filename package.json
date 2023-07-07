@@ -1,0 +1,16 @@
+{
+  "name": "findmybuddy-backend",
+  "version": "1.0.0",
+  "description": "BackEnd (Server) for FindMyBuddy Project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev":"nodemon index.js"
+  },
+  "author": "Vishal Ola & Sahil Yadav",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
