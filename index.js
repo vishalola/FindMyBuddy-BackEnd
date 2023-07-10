@@ -43,6 +43,12 @@ app.post("/getBuddy",(req,res)=>{
         res.send(userData);
     })
 })
+app.post("/userDetail",(req,res)=>{
+    let username=req.body.username;
+    credentials.findOne({userName:username}).then(data=>{
+        res.send(data);
+    }).catch(e=>console.log(e))
+})
 app.post("/addSchool",(req,res)=>{
     let username=req.body.username;
     let schoolname=req.body.school;
